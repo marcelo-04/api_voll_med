@@ -48,3 +48,24 @@ Desenvolvendo uma API Rest em Java!
 ### Padrão DAO
 * O padrão de projeto DAO, conhecido também por Data Access Object, é utilizado para persistência de dados, onde seu principal objetivo é separar regras de negócio de regras de acesso a banco de dados. Nas classes que seguem esse padrão, isolamos todos os códigos que lidam com conexões, comandos SQLs e funções diretas ao banco de dados, para que assim tais códigos não se espalhem por outros pontos da aplicação, algo que dificultaria a manutenção do código e também a troca das tecnologias e do mecanismo de persistência.
 * Em alguns projetos em Java, dependendo da tecnologia escolhida, é comum encontrarmos classes que seguem o padrão DAO, utilizado para isolar o acesso aos dados. Entretanto, neste curso utilizaremos um outro padrão, conhecido como Repository.
+
+### Aplicando boas práticas e proteja uma API Rest! Com objetivos.
+* Boas práticas na API
+* Tratamento de erros
+* Autenticação/Autorização
+* Tokens JWT
+* Os objetivos deste segundo curso são: aprender boas práticas na API referente ao protocolo HTTP. Faremos ajustes na classe controller, para seguir as boas práticas do protocolo HTTP quanto ao retorno dos códigos HTTP e das respostas que a API devolve. 
+* Logo após, realizaremos tratamento de erros. Eventualmente, pode ocorrer um erro na API, e precisamos entender o que o Spring faz ao ocorrer uma exception enquanto o programa é executado, o que é devolvido como resposta para o cliente da API.
+* Assim, vamos personalizar esses retornos para tratar esses erros da melhor forma possível.
+* Após isso, focaremos na segurança, no controle de autenticação e de autorização da API. No curso anterior não abordamos isso, logo a nossa API está pública - qualquer pessoa pode enviar requisições para remover, atualizar ou alterar informações da API. 
+* Mas não é dessa forma que desejamos, precisamos ter um controle. Isso será feito na aplicação front-end, porém, na API precisamos ter um código que permite o usuário se autenticar, e também ter um controle de acesso de informações públicas e privadas.
+* Aprenderemos a aplicar isso com o Spring Security, sendo um módulo do Spring responsável por monitorar esse controle.
+* No caso, usaremos a autenticação fundamentada em tokens com o padrão JSON Web Token (JWT).
+
+### O que aprendemos?
+* Utilizar a classe ResponseEntity, do Spring, para personalizar os retornos dos métodos de uma classe Controller;
+* Modificar o código HTTP devolvido nas respostas da API;
+* Adicionar cabeçalhos nas respostas da API;
+* Utilizar os códigos HTTP mais apropriados para cada operação realizada na API.
+
+

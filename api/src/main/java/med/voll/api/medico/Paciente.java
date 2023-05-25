@@ -63,6 +63,14 @@ public class Paciente {
 		return cpf;
 	}
 	
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
 	public void atualizarInformacoes(DadosAtualizacaoPaciente dados) {
 	    if (dados.nome() != null)
 	        this.nome = dados.nome();
@@ -74,7 +82,12 @@ public class Paciente {
 	        endereco.atualizarInformacoes(dados.endereco());
 	}
 
-	public void inativar() {
-	    this.ativo = false;
+//	public void inativar() {
+//	    this.ativo = false;
+//	}
+
+	public void excluir() {
+		this.ativo = false;
+		
 	}
 }

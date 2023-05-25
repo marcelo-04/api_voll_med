@@ -71,6 +71,14 @@ public class Medico {
 	public Especialidade getEspecialidade() {
 		return especialidade;
 	}
+	
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
 
 	public void atualizarInformacoes(@Valid DadosAtualizacaoMedico dados) {
 		if(dados.nome() != null) {
@@ -87,4 +95,5 @@ public class Medico {
 	public void excluir() {
 		this.ativo = false;
 	}
+
 }

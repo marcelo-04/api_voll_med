@@ -1,4 +1,4 @@
-package med.voll.api.medico;
+package med.voll.api.paciente;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;

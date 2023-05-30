@@ -67,5 +67,10 @@ Desenvolvendo uma API Rest em Java!
 * Modificar o código HTTP devolvido nas respostas da API;
 * Adicionar cabeçalhos nas respostas da API;
 * Utilizar os códigos HTTP mais apropriados para cada operação realizada na API.
+* Funcionamento do processo de autenticação e autorização em uma API Rest.
+* Adicionando o Spring Security ao projeto.
+* O comportamento padrão do Spring Security em uma aplicação;
+* A implementação e o processo de autenticação na API, de maneira Stateless, utilizando as classe e configurações so Spring Security.
+
 
 

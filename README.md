@@ -62,7 +62,7 @@ Desenvolvendo uma API Rest em Java!
 * Aprenderemos a aplicar isso com o Spring Security, sendo um módulo do Spring responsável por monitorar esse controle.
 * No caso, usaremos a autenticação fundamentada em tokens com o padrão JSON Web Token (JWT).
 
-### O que aprendemos?
+### O que aprendemos? 
 * Utilizar a classe ResponseEntity, do Spring, para personalizar os retornos dos métodos de uma classe Controller;
 * Modificar o código HTTP devolvido nas respostas da API;
 * Adicionar cabeçalhos nas respostas da API;
@@ -71,6 +71,12 @@ Desenvolvendo uma API Rest em Java!
 * Adicionando o Spring Security ao projeto.
 * O comportamento padrão do Spring Security em uma aplicação;
 * A implementação e o processo de autenticação na API, de maneira Stateless, utilizando as classe e configurações so Spring Security.
+
+### JSON Web Token
+* Adicionamos uma biblioteca Auth0 java-jwt como dependência do projeto;
+* Utilizamos essa biblioteca para realizar a geração de um token na API;
+* Injetamos uma propriedade do arquivo application.properties em uma classe gerenciada pelo Spring, utilizando a anotação @Value;
+* Devolvemos um token gerado na API quando um usuário se autenticar nela.
 
 
 
